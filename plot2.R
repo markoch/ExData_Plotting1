@@ -17,4 +17,4 @@ colnames(testData) <- colNames
 datetime<-as.POSIXct(paste(testData$Date,testData$Time))
 kilowatts <- as.numeric(testData$Global_active_power)
 
-plot(datetime, kilowatts)
+plot(datetime, kilowatts,  type="l")
